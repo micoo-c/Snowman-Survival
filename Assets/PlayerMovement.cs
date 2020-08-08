@@ -22,5 +22,9 @@ public class PlayerMovement : MonoBehaviour
         transform.Translate(new Vector3(horixontalInput, 0, 0) * Time.deltaTime * _speed);
         float verticalInput = Input.GetAxis("Vertical");
         transform.Translate(new Vector3(0, 0, verticalInput) * Time.deltaTime * _speed);
+        //float mouseXInput = Input.GetAxis("MouseX");
+        //transform.Rotate(new Vector3(mouseXInput, 0, 0) * Time.deltaTime * _speed);
+        //float mouseYInput = Input.GetAxis("MouseY");
+        //transform.Rotate(new Vector3(0, 0, mouseYInput) * Time.deltaTime * _speed);
     }
 }
