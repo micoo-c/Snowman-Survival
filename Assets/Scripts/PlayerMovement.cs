@@ -8,9 +8,9 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField]
-    private float _speedH;
+    private float _speedH = 5;
     [SerializeField]
-    private float _speedV;
+    private float _speedV = 5;
 
     void Start()
     {

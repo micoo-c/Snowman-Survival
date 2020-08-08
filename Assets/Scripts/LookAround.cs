@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LookAround : MonoBehaviour
 {
-    public Camera camera;
+    public new Camera camera;
 
     // Start is called before the first frame update
     void Start()
@@ -20,7 +20,7 @@ public class LookAround : MonoBehaviour
 
     void lookAround()
     {
-        RaycastHit hit;
+        //RaycastHit hit;
         Ray ray = camera.ScreenPointToRay(Input.mousePosition);
         Plane ground = new Plane(Vector3.down, Vector3.up);
         float rayDistance;
