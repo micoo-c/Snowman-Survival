@@ -7,10 +7,10 @@ public class LookAround : MonoBehaviour
     public new Camera camera;
 
     // Start is called before the first frame update
-    void Start()
+    /*void Start()
     {
 
-    }
+    }*/
 
     // Update is called once per frame
     void Update()
@@ -23,9 +23,9 @@ public class LookAround : MonoBehaviour
         //RaycastHit hit;
         Ray ray = camera.ScreenPointToRay(Input.mousePosition);
         Plane ground = new Plane(Vector3.down, Vector3.up);
-        float rayDistance;
+        //float rayDistance;
 
-        if (ground.Raycast(ray, out rayDistance))
+        if (ground.Raycast(ray, out float rayDistance))
         {
             Vector3 point = ray.GetPoint(rayDistance);
             Debug.DrawLine(ray.origin, point, Color.red);

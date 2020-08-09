@@ -12,10 +12,10 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     private float _speedV = 5;
 
-    void Start()
+    /*void Start()
     {
         
-    }
+    }*/
 
     // Update is called once per frame
     void Update()
